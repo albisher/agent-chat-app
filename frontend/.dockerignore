@@ -1,0 +1,30 @@
+# Git
+.git
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+
+# IDEs
+.idea
+.vscode
+
+# Virtual Environments
+venv
+.venv
+
+# Node Modules (if applicable)
+node_modules
+
+# Tests
+tests
+
+# Data files (if applicable)
+data
+*.csv
+*.json
+
+# Ignore Docker files
+Dockerfile
+docker-compose.yml

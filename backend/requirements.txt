@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langchain-ollama  # Make sure this is included
+langchain-community

@@ -1,0 +1,17 @@
+OLLAMA-CHAT-APP/
+├── backend/
+│   ├── Dockerfile  # Added Dockerfile for backend
+│   ├── main.py
+│   ├── requirements.txt
+│   └── vector_store.py
+├── frontend/
+│   ├── Dockerfile  # Added Dockerfile for frontend
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── utils.py
+├── ollama/
+│   └── Dockerfile
+├── docker-compose.yml
+├── projectStructure.txt
+└── README.md

@@ -1,0 +1,30 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama:/root/.ollama
+    entrypoint: ["/bin/bash", "/root/.ollama/entrypoint.sh"] 
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_MODEL=llama3.2:1b
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - ollama
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+
+volumes:
+  ollama_data:
