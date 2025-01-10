@@ -1,6 +1,6 @@
 # Ollama Chat App
 
-This is a simple chat application that allows you to chat with the Ollama language model (specifically Llama 3) locally using a Streamlit UI.
+This is a simple chat application that allows you to chat with the Ollama language model (specifically Llama 3.1:1b) locally using a Streamlit UI.
 
 ## Prerequisites
 
